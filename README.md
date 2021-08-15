@@ -14,7 +14,7 @@ Version 2.0. See the file "[LICENSE](LICENSE)" for more information.
 
 ## Introduction
 
-Each FOLIO installation has lists of controlled vocabulary terms (for instance, “Formats” and “Resource types” in Inventory, “Patron Groups” and “Refund Reasons” in Users — see FOLIO-2802 for a more complete list).  In installations that use more than one language, these terms do not display translated values when the locale of the session is changed.
+Each FOLIO installation has lists of controlled vocabulary terms (for instance, “Formats” and “Resource types” in Inventory, “Patron Groups” and “Refund Reasons” in Users — see [FOLIO-2802](https://issues.folio.org/browse/FOLIO-2802) for a more complete list).  In installations that use more than one language, these terms do not display translated values when the locale of the session is changed.
 
 So we need a mechanism for storing translated strings for controlled vocabulary terms.
 
