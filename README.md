@@ -7,6 +7,8 @@ This software is distributed under the terms of the Apache License,
 Version 2.0. See the file "[LICENSE](LICENSE)" for more information.
 
 * [Introduction](#introduction)
+* [Use case(s)](#use-cases)
+* [Jira Related Issues Links](#jira-related-issues-links)
 * [Compilation](#compilation)
 * [Docker Build](#docker-build)
 * [Installing a module](#installing-a-module)
@@ -23,6 +25,11 @@ So we need a mechanism for storing translated strings for controlled vocabulary 
 As a FOLIO Stripes app user, I want to see strings in my native locale so I can understand the user interface.
 
 As a systems librarian, I want to enter controlled vocabulary in two or more locales so that my users can understand the user interface; some countries, regions or institutions are bilingual or multilingual.
+
+## Jira Related Issues Links
+https://issues.folio.org/browse/UXPROD-3148
+https://issues.folio.org/browse/FOLIO-3258
+https://issues.folio.org/browse/UXPROD-515
 
 ## Compilation
 
