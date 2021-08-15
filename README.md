@@ -14,7 +14,15 @@ Version 2.0. See the file "[LICENSE](LICENSE)" for more information.
 
 ## Introduction
 
-install any backend module to okapi
+Each FOLIO installation has lists of controlled vocabulary terms (for instance, “Formats” and “Resource types” in Inventory, “Patron Groups” and “Refund Reasons” in Users — see FOLIO-2802 for a more complete list).  In installations that use more than one language, these terms do not display translated values when the locale of the session is changed.
+
+So we need a mechanism for storing translated strings for controlled vocabulary terms.
+
+##Use case(s)
+
+As a FOLIO Stripes app user, I want to see strings in my native locale so I can understand the user interface.
+
+As a systems librarian, I want to enter controlled vocabulary in two or more locales so that my users can understand the user interface; some countries, regions or institutions are bilingual or multilingual.
 
 ## Compilation
 
