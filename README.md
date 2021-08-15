@@ -18,7 +18,7 @@ Each FOLIO installation has lists of controlled vocabulary terms (for instance, 
 
 So we need a mechanism for storing translated strings for controlled vocabulary terms.
 
-##Use case(s)
+## Use case(s)
 
 As a FOLIO Stripes app user, I want to see strings in my native locale so I can understand the user interface.
 
