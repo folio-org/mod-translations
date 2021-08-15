@@ -30,25 +30,13 @@ As a systems librarian, I want to enter controlled vocabulary in two or more loc
    mvn clean install
 ```
 
-See that it says "BUILD SUCCESS" near the end.
-
 ## Docker Build
-
-Build the docker container running from root folder:
 
 ```
    docker build -t mod-translations:1.0.0-SNAPSHOT .
 ```
 
 ## Installing a module
-
-First of all you need a running Okapi instance.
-(Note that [specifying](../README.md#setting-things-up) an explicit 'okapiurl' might be needed.)
-
-```
-   cd ../okapi
-   java -jar okapi-core/target/okapi-core-fat.jar dev [for development mode]
-```
 
 Declare a module to Okapi:
 
@@ -59,13 +47,7 @@ curl -w '\n' -X POST -D -   \
    http://localhost:9130/_/proxy/modules
 ```
 
-That ModuleDescriptor tells Okapi what the module is called, what services it
-provides, and how to deploy it.
-
 ## Deploying a module
-
-Next we need to deploy the module. There is a deployment descriptor in
-`target/DeploymentDescriptor.json`. It tells Okapi to start the module on 'localhost'.
 
 Deploy it via Okapi discovery:
 
