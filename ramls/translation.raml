@@ -1,0 +1,73 @@
+#%RAML 1.0
+title: translations API
+version: v1.0
+protocols: [ HTTP, HTTPS ]
+baseUri: http://localhost
+
+documentation:
+  - title: library-defined translations API
+    content: This documents the API calls that can be made to query and manage library-defined vocabularies translations
+
+types:
+  translation: !include translation.json
+  translations: !include translations.json
+  errors: !include raml-util/schemas/errors.schema
+
+traits:
+  pageable: !include raml-util/traits/pageable.raml
+  searchable: !include raml-util/traits/searchable.raml
+  language: !include raml-util/traits/language.raml
+  validate: !include raml-util/traits/validation.raml
+
+resourceTypes:
+  collection: !include raml-util/rtypes/collection.raml
+  collection-item: !include raml-util/rtypes/item-collection.raml
+
+/translations:
+  type:
+    collection:
+      exampleCollection: !include examples/translations.json
+      exampleItem: !include examples/translation.json
+      schemaCollection: translations
+      schemaItem: translation
+  get:
+    is: [
+      searchable: { description: "with valid searchable fields", example: "localeValue=en"},
+      pageable
+    ]
+    description: Return a list of translations
+  post:
+    description: Create a new translations
+    is: [validate]
+  delete:
+    description: "Delete all translations"
+    is: [language]
+    responses:
+      204:
+        description: "All translations delete"
+      500:
+        description: "Internal server error"
+        body:
+          text/plain:
+            example: "Internal server error"
+  /{translationId}:
+    description: Pass the id for the translations
+    type:
+      collection-item:
+        exampleItem: !include examples/translation.json
+        schema: translation
+    put:
+        description: Update a language translators
+        is: [validate]
+        responses:
+          422:
+            description: "Validation error"
+            body:
+              application/json:
+                type: errors
+
+
+
+
+
+

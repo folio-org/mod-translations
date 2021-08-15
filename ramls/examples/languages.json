@@ -1,0 +1,15 @@
+{
+  "languages": [
+    {
+      "name": "English",
+      "localeCode": "en-EN",
+      "status": ""
+    },
+    {
+      "name": "arabic",
+      "localeCode": "ar-AR",
+      "status": ""
+    }
+  ],
+  "totalRecords": 2
+}

@@ -1,0 +1,28 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "description": "Returns language and the translators assigned to it",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "string"
+    },
+    "localeCode": {
+      "type": "string"
+    },
+    "translators": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "metadata": {
+      "type": "object",
+      "$ref": "raml-util/schemas/metadata.schema",
+      "readonly": true
+    }
+  },
+  "additionalProperties": false,
+  "required": [
+    "localeCode"
+  ]
+}

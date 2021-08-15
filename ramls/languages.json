@@ -1,0 +1,22 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "description": "Returns a collection of languages",
+  "type": "object",
+  "properties": {
+    "languages": {
+      "description": "List of languages",
+      "type": "array",
+      "items": {
+        "type": "object",
+        "$ref": "language.json"
+      }
+    },
+    "totalRecords": {
+      "type": "integer"
+    }
+  },
+  "required": [
+    "languages",
+    "totalRecords"
+  ]
+}
