@@ -27,9 +27,9 @@ As a FOLIO Stripes app user, I want to see strings in my native locale so I can 
 As a systems librarian, I want to enter controlled vocabulary in two or more locales so that my users can understand the user interface; some countries, regions or institutions are bilingual or multilingual.
 
 ## Jira Related Issues Links
-https://issues.folio.org/browse/UXPROD-3148
-https://issues.folio.org/browse/FOLIO-3258
-https://issues.folio.org/browse/UXPROD-515
+https://issues.folio.org/browse/UXPROD-3148 <br />
+https://issues.folio.org/browse/FOLIO-3258 <br />
+https://issues.folio.org/browse/UXPROD-515 <br />
 
 ## Compilation
 
