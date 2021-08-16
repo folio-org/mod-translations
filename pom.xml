@@ -1,5 +1,4 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
 
   <groupId>org.folio</groupId>
@@ -71,7 +70,7 @@
     </dependencies>
   </dependencyManagement>
 
-   <dependencies>
+  <dependencies>
 
     <dependency>
       <groupId>org.folio</groupId>
@@ -82,7 +81,7 @@
     <dependency>
       <groupId>junit</groupId>
       <artifactId>junit</artifactId>
-      <version>4.12</version><!--$NO-MVN-MAN-VER$-->
+      <version>4.13.1</version> <!--$NO-MVN-MAN-VER$-->
       <scope>test</scope>
     </dependency>
     <dependency>
@@ -131,17 +130,17 @@
       <type>jar</type>
     </dependency>
     <dependency>
-        <groupId>org.slf4j</groupId>
-        <artifactId>slf4j-api</artifactId>
-        <version>1.7.25</version> <!-- or use LATEST -->
+      <groupId>org.slf4j</groupId>
+      <artifactId>slf4j-api</artifactId>
+      <version>1.7.25</version> <!-- or use LATEST -->
     </dependency>
     <dependency>
-        <groupId>org.slf4j</groupId>
-        <artifactId>slf4j-simple</artifactId>
-        <version>1.7.25</version> <!-- or use LATEST -->
+      <groupId>org.slf4j</groupId>
+      <artifactId>slf4j-simple</artifactId>
+      <version>1.7.25</version> <!-- or use LATEST -->
     </dependency>
-   </dependencies>
-    <build>
+  </dependencies>
+  <build>
     <resources>
       <resource>
         <directory>src/main/resources</directory>
